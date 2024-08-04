@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+:root {
+    --main-bg-color: #2874f0;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background: var(--main-bg-color); 
+    font-family: 'Lato', sans-serif;
+}
+
+nav{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 88px;
+    padding: 0 25px;
+}
+
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none; 
+    padding: 0 23px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{ 
+    font-weight: bolder;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    width: 30vw;
+    height: 27px;
+    border-radius: 5px;
+    margin: 0 16px 0 -79px;
+    padding:0 12px;
+}
+
+.search button{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.slider{                                                                                                          
+    width: 80vw;
+    margin: 12px auto;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+    left: 586px;
+    top: 250px;
+    transform: translate(-50%,-50%);
+    background-image: url("https://image.shutterstock.com/image-photo/beautiful-brunette-woman-wearing-dress-260nw-360863375.jpg");
+    background-size: cover;
+    box-shadow: 1px 2px 10px white;
+    animation: imageslider 12s infinite ease;
+}
+@keyframes imageslider {
+    0%{
+        background-image:url('https://image.shutterstock.com/image-photo/beautiful-brunette-woman-wearing-dress-260nw-360863375.jpg');
+
+    }
+    45%{
+         background: url('https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/2659/posts/26768/image/eCommerce%20website%20templates%20image.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+    }
+    75%{
+        background-image: url('https://www.purchasecommerce.com/assets/img/sv-home.png');
+
+    }
+    
+}
+
+.card{
+    max-width: 101vw;
+    margin: 38px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.cards{
+    display: flex; 
+    overflow: scroll;
+}
+
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 3px;
+}
+
+.card h2{
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color); 
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.last{
+    height: 60px;
+    position: relative;
+    left: 500px;
+}
+.last img{
+    height: 60px;
+}
+.last img:hover{
+    position: relative;
+    bottom: 200px;
+    height: 300px;
+    overflow: hidden;
+    
+    background-size: cover;
+}
